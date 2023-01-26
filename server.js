@@ -8,7 +8,7 @@ const {shuffleArray} = require('./utils')
 const { PORT, ROLLBAR_TOKEN } = process.env
 
 app.use(express.json())
-app.use(cors())
+// app.use(cors())
 app.use(express.static(`${__dirname}/public`))
 
 // include and initialize the rollbar library with your access token
